@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+element.style {
+    width: 350px;
+}
+body{
+    font-family: "Fjalla+One", sans-serif;
+}
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color:#191c32 ;
+    color: #fff;
+}
+.navbar{
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.brand{
+    margin-top: -7px;
+}
+.brand span{
+    color: aqua;
+}
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.menu li{
+    list-style: none;
+}
+ .menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+ }
+.menu .active{
+    color: aqua ;
+}
+
+.menu a:hover{
+    background-color: aqua;
+    color: #191c32;
+    transition: ease-in .4s;
+}
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+
+}
+h1 {
+    font-size: 3em;
+}
+span{
+    color: aqua;
+}
+.download-cv{
+    padding: 10px 20px;
+    background-color: aqua;
+    border: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba( 182,231, 200,.69);
+}
+.download-cv:hover{
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.main img {
+    width: 300px;
+    margin-left: 30px;
+    border: 7px solid aqua;
+}
+.about {
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+   /* width: 100vh; */
+    align-items: center;
+}
+
+.about img{
+    width: 80vh;
+    grid-column: 1/5;
+}
+
+.about-info{
+    grid-column: 5/10;
+    padding: 3em;
+}
+
+.about-info h2 {
+    font-size: 1.5em;
+    color: #191c32;
+}
+
+.divider{
+    height: 5px;
+    width: 60px;
+    background-color: aqua;
+    margin-top: 5px;
+    margin-bottom: 2em;
+}
+.about p{
+    margin-bottom: 1em;
+}
+.portfolio{
+    width: 100vw;
+    background-color:#191c32 ;
+    color: #fff;
+}
+.porfolio-headings {
+    width: 100vh;
+    padding: 2em;
+    padding-top: 2em;
+    padding-left: 6em;
+
+}
+.portfolio-headings h2{
+
+    font-size: 1.5em;
+}
+.portfolio .container{
+    width: 80vw;
+   /* height: 80vh;*/
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.card {
+    padding: 10px;
+    /* border: solid 1px black; */
+   color: #fff;
+    width: 340px;
+    margin: 1em;
+  /*  color: #1d1932; */
+   /* background-color: #130b38;*/
+}
+.card__img {
+
+    height: 250px;
+    background-image: url(../img/CapturaBuena.PNG);
+    background-size: cover;
+}
+.card__img2{
+    height: 250px;
+    background-image: url(../img/Captura2.PNG);
+    background-size: cover;
+}
+.card__img3{
+    height: 250px;
+    background-image: url(../img/Captura.PNG);
+    background-size: cover;
+}
+.card__title{
+    text-align: center;
+    padding: 20px;
+}
+.card__projects-links{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.card__projects-links a {
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+ }
+ .card__project-links i {
+    font-size: 4em;
+ }
+ .card .project-details{
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+
+ }
+.card .project-details a {
+    text-decoration: none;
+    color: #191c32;
+}
+.project-details-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+}
+.card p{
+padding-bottom: 1em;
+}
+.contact-headings{
+    padding: 2em;
+    padding-left: 6em;
+    /* font-size: 1.5em; */
+}
+.container-contact{
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+}
+.form{
+    display: inline-grid;
+    width: 30vw;
+    margin-top: 2em;
+}
+.form input{
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.message__text{
+    height: 150px;
+    background: none;
+    color: #fff;
+    padding: 1px;
+    border: 1px solid #fff;
+}
+.btn-submit{
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: aqua;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 3px 11px -5px rgba( 182,231, 200,.69);
+}
+.btn-submit:hover{
+    background-color: #fff;
+    box-shadow: none;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color: aqua;
+
+}
+.footer-content h2{
+    text-align: center;
+    font-size: 2em;
+}
+.footer .footer-content h5,
+.social i
+{
+    font-size: 1.5em;
+    text-align: center;
+}
+.social {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 0.5em;
+}
+
